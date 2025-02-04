@@ -1,0 +1,110 @@
+.articles-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nft {
+  user-select: none;
+  max-width: 280px;
+  flex: 1 1 calc(33.333% - 40px); /* Adjust width and maintain space between items */
+  margin: 20px; /* Margin around each card */
+  border: 5px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  box-shadow: 0 5px 12px 3px #00000088;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  width: 100%;
+  padding: 1rem;
+}
+
+.nft .tokenImage {
+  border-radius: 0.5rem;
+  max-width: 90%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.nft .title {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.nft .description {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: #d4d4d4;
+}
+
+.nft .tokenInfo {
+  display: flex;
+}
+
+.nft .tokenInfo .price {
+  display: flex;
+  align-items: center;
+  color: #888686;
+  font-weight: 400;
+}
+
+.nft .tokenInfo .duration {
+  display: flex;
+  align-items: center;
+  color: #888686;
+  font-weight: 400;
+  margin-right: 25px;
+}
+
+.nft::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 80px 20px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.8s all;
+}
+
+.nft:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 5px 40px 7px #000000aa;
+  transform: scale(1.015);
+}
+
+.nft:hover::before {
+  top: -100%;
+  left: 200%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .nft {
+    flex: 1 1 calc(50% - 40px); /* Adjust to two columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .nft {
+    flex: 1 1 calc(100% - 40px); /* Adjust to one column */
+  }
+}

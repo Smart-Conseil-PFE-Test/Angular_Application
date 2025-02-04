@@ -1,0 +1,19 @@
+<div class="articles-container">
+  <div *ngFor="let article of articles" class="nft">
+    <div class="main">
+      <img class="tokenImage" src="testimg.png" alt="NFT" />
+      <h1 class="title">{{ article.Title }}</h1>
+      <p class="description">Introduction: {{ article.Introduction }}</p>
+      <div class="tokenInfo">
+        <div class="duration">
+          <ins>◷</ins>
+          <p>{{ article.LastMod | date: 'short' }}</p>
+        </div>
+        <div class="price">
+          <ins>◘</ins>
+          <p>{{ article.IdTheme }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

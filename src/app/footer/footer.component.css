@@ -1,0 +1,9 @@
+/* src/app/footer/footer.component.css */
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 50px;
+}
