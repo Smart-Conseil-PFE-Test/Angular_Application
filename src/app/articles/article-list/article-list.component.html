@@ -1,7 +1,7 @@
 <div class="articles-container">
   <div *ngFor="let article of articles" class="nft" (click)="openModal(article.id)">
     <div class="main">
-      <img class="tokenImage" src="testimg.png" alt="NFT" />
+      <img class="tokenImage" src="cardImage.png" alt="NFT" />
       <h1 class="title">{{ article.Title }}</h1>
       <p class="description">{{ article.Introduction }}</p>
       <div class="tokenInfo">
@@ -22,7 +22,7 @@
     <div class="modal-content">
       <span class="close" (click)="closeModal()">&times;</span>
       <h1 class="title-modal">{{ selectedArticle.Title }}</h1>
-      <img class="tokenImage" src="testimg.png" alt="Article Image" />
+      <img class="tokenImage" src="cardImage.png" alt="Article Image" />
       <p class="description-modal">{{ selectedArticle.Introduction }}</p>
       <div class="flex items-center">
         <div class="duration">
