@@ -17,34 +17,34 @@ This is a fully responsive Angular 19 application designed to display articles f
 ```bash
 src/
 ├── app/
-│   ├── articles/
-│   │   ├── articles-list/
-│   │   │   ├── articles-list.component.ts
-│   │   │   ├── articles-list.component.spec.ts
-│   │   │   ├── articles-list.component.html
-│   │   │   ├── articles-list.component.css
-│   │   ├── model/
-│   │   │   └── article.ts
-│   │   ├── service/
-│   │   │   └── articles.service.spec.ts
-│   │   │   └── articles.service.ts
-│   │   ├── articles-routing.module.ts
-│   │   ├── articles.module.ts
-│   ├── navbar/
-│   │   └── navbar.component.ts
-│   ├── footer/
-│   │   └── footer.component.ts
-│   ├── app.component.css
-│   ├── app.component.spec
-│   └── app.component.html
-│   └── app.component.ts
-│   └── app.config.ts
-│   └── app.routes.ts
-├── index.html
-├── assets/
-│   └── images/
-│       └── logoSC.png
-│       └── cardImage.png.png
+│   ├── articles/ : Module for managing articles-related features
+│   │   ├── articles-list/ : Component to list and display articles
+│   │   │   ├── articles-list.component.ts : Handles logic for fetching and displaying articles
+│   │   │   ├── articles-list.component.spec.ts : Unit tests for ArticlesListComponent
+│   │   │   ├── articles-list.component.html : HTML template for the articles list
+│   │   │   ├── articles-list.component.css : Styles specific to ArticlesListComponent
+│   │   ├── model/ : Defines data models for the application
+│   │   │   └── article.ts : Article model definition (id, title, content, etc.)
+│   │   ├── service/ : Services for handling business logic and API requests
+│   │   │   └── articles.service.spec.ts : Unit tests for ArticlesService
+│   │   │   └── articles.service.ts : Provides methods to fetch and manage articles from the backend
+│   │   ├── articles-routing.module.ts : Defines routes for the ArticlesModule
+│   │   ├── articles.module.ts : Configuration and declarations for the ArticlesModule
+│   ├── navbar/ : Component for the navigation bar
+│   │   └── navbar.component.ts : Logic for handling navigation links
+│   ├── footer/ : Component for the application footer
+│   │   └── footer.component.ts : Handles footer display logic
+│   ├── app.component.css : Styles for the root application component
+│   ├── app.component.spec : Unit tests for AppComponent
+│   ├── app.component.html : Root template integrating Navbar, Footer, and router outlet
+│   ├── app.component.ts : Main application component logic
+│   ├── app.config.ts : Configuration file for app-level constants
+│   ├── app.routes.ts : Defines application-level routes
+├── index.html : Main HTML file that bootstraps the Angular application
+├── assets/ : Directory for static assets like images
+│   └── images/ : Contains image resources
+│       └── logoSC.png : Application logo
+│       └── cardImage.png : Placeholder image for article cards
 
 ```
 
