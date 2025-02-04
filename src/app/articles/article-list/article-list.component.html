@@ -1,5 +1,5 @@
 <div class="articles-container">
-  <div *ngFor="let article of articles" class="nft">
+  <div *ngFor="let article of articles" class="nft" (click)="openModal(article.id)">
     <div class="main">
       <img class="tokenImage" src="testimg.png" alt="NFT" />
       <h1 class="title">{{ article.Title }}</h1>
@@ -14,7 +14,6 @@
           <p>{{ article.IdTheme }}</p>
         </div>
       </div>
-      <button (click)="openModal(article.id)" class="eye-btn">👁️ </button>
     </div>
   </div>
 
