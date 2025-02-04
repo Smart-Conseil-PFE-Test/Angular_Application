@@ -135,7 +135,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/Smart-Conseil-PFE-Test/Angular_Application
+git clone https://github.com/Smart-Conseil-PFE-Test/Angular_Application.git
 
 cd angular-articles-app
 Install dependencies:
