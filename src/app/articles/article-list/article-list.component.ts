@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ArticleListComponent implements OnInit {
   articles: Article[] = [];
+  selectedArticle: Article | null = null;
 
   constructor(private articleService: ArticleService) {}
 
@@ -19,5 +20,16 @@ export class ArticleListComponent implements OnInit {
     this.articleService.getAll().subscribe((data: Article[]) => {
       this.articles = data;
     });
+  }
+
+   // Fetch article by ID and open the modal
+   openModal(id: number): void {
+    this.articleService.getById(id).subscribe((data: Article) => {
+      this.selectedArticle = data;
+    });
+  }
+
+  closeModal(): void {
+    this.selectedArticle = null;
   }
 }

@@ -3,15 +3,36 @@
     <div class="main">
       <img class="tokenImage" src="testimg.png" alt="NFT" />
       <h1 class="title">{{ article.Title }}</h1>
-      <p class="description">Introduction: {{ article.Introduction }}</p>
+      <p class="description">{{ article.Introduction }}</p>
       <div class="tokenInfo">
         <div class="duration">
-          <ins>◷</ins>
-          <p>{{ article.LastMod | date: 'short' }}</p>
+          <ins class="ins">📅</ins>
+          <p>{{ article.LastMod | date: 'dd/MM/yyyy' }}</p>
         </div>
         <div class="price">
-          <ins>◘</ins>
+          <ins class="ins">📄</ins>
           <p>{{ article.IdTheme }}</p>
+        </div>
+      </div>
+      <button (click)="openModal(article.id)" class="eye-btn">👁️ </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div *ngIf="selectedArticle" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <h1 class="title-modal">{{ selectedArticle.Title }}</h1>
+      <img class="tokenImage" src="testimg.png" alt="Article Image" />
+      <p class="description-modal">{{ selectedArticle.Introduction }}</p>
+      <div class="flex items-center">
+        <div class="duration">
+
+          <p class="duration-modal"><ins class="ins">📅</ins> Last modified: {{ selectedArticle.LastMod | date: 'dd/MM/yyyy' }}</p>
+        </div>
+        <div class="price-modal">
+
+          <p><ins class="ins">📄</ins> Theme: {{ selectedArticle.IdTheme }}</p>
         </div>
       </div>
     </div>
