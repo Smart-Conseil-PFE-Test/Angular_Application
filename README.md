@@ -1,4 +1,7 @@
 # Angular Articles App
+
+## Web, Mobile, and Tablette Main page view
+
 ![web Screenshot](./public/web.png)
 ![mobile Screenshot](./public/mobile.png)
 ![tablette Screenshot](./public/tablette.png)
