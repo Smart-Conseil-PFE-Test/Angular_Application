@@ -1,7 +1,7 @@
 # Angular Articles App
 ![web Screenshot](./public/web.png)
-![tablette Screenshot](./public/tablette.png)
 ![mobile Screenshot](./public/mobile.png)
+![tablette Screenshot](./public/tablette.png)
 
 This is a fully responsive Angular 19 application designed to display articles fetched from a Laravel backend. The app features a clean and user-friendly interface with a list of articles shown in a stylish card layout. Each card is clickable, allowing users to view more details of the selected article. The app also includes a Navbar and Footer, providing a seamless navigation to the sources or contact.
 
